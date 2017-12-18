@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import scoringChance from './scoring_chance_reducer';
+import glennSounds from './glenn_sounds_reducer'; 
 
 export default combineReducers({
-    scoringChance
+    glennSounds
 });

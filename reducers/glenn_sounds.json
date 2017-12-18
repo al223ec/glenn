@@ -1,0 +1,19 @@
+[
+    {
+        "scoringChanceType": "break away",
+        "icon": "icon type",
+        "team": "Italien" 
+    },
+    {
+        "scoringChanceType": "free kick",
+        "team": "Italien"
+    },
+    {
+        "scoringChanceType": "header",
+        "team": "Italien" 
+    },
+    {
+        "scoringChanceType": "corner",
+        "team": "Italien"
+    }
+]

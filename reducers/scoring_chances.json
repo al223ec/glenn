@@ -7,5 +7,9 @@
     },
     {
         "scoringChanceType": "header"
+    },
+    {
+        "scoringChanceType": "corner"
     }
+    
 ]

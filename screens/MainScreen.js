@@ -1,9 +1,10 @@
 import React, { Component } from 'react'; 
 import { View, Platform, Image } from 'react-native'; 
-import { Divider, Text } from 'react-native-elements'; 
+import { Divider } from 'react-native-elements'; 
 import Expo from 'expo';
 import icon from '../assets/icon.png';
 import { STATUS_BAR_HEIGHT, SCREEN_WIDTH, GLENN_COLORS } from '../constants';
+import GlennSoundListning from '../components/GlennSoundListning';
 
 const cacheImages = images => images.map((image) => {
     if (typeof image === 'string') return Image.prefetch(image); 
@@ -52,7 +53,9 @@ class MainScreen extends Component {
         const { dividerStyle, containerStyle } = styles; 
         return (<View style={{ flex: 1, backgroundColor: '#ddd' }}> 
             <View style={containerStyle}>
-                <Text h1> Glennsande</Text>
+                {/* Search */}
+                {/* listing of audio */}
+                <GlennSoundListning />
                 <Divider style={dividerStyle} />
             </View>
         </View>);
