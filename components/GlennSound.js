@@ -47,7 +47,8 @@ const styles = {
         fontSize: 12
     },
     glennSoundItemHeaderStyle: {
-        fontWeight: '900'
+        fontWeight: '900',
+        fontSize: 14
     }
 }; 
 
