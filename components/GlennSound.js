@@ -1,7 +1,9 @@
 import React, { Component } from 'react'; 
-import { View } from 'react-native'; 
+import { View, TouchableOpacity } from 'react-native'; 
 import { Text } from 'react-native-elements'; 
+import { connect } from 'react-redux'; 
 import { GLENN_COLORS } from '../constants';
+import { selectGlennSound } from '../actions'; 
 
 class GlennSound extends Component {
     render() {
@@ -10,17 +12,22 @@ class GlennSound extends Component {
             glennSoundItemStyle,
             glennSoundItemHeaderStyle
         } = styles;
-        const { glennSound } = this.props; 
-    
+        const { glennSound } = this.props;
+        
         return (
-            <View style={glennSoundContainerStyle}>
-                <Text style={[glennSoundItemStyle, glennSoundItemHeaderStyle]}> 
-                    {glennSound.phonetics}
-                </Text>
-                <Text style={glennSoundItemStyle}> 
-                    {glennSound.scoringChanceType}
-                </Text>
-            </View>
+            <TouchableOpacity 
+                style={glennSoundContainerStyle} 
+                onPress={() => this.props.selectGlennSound(glennSound)}
+            >
+                <View>
+                    <Text style={[glennSoundItemStyle, glennSoundItemHeaderStyle]}> 
+                        {glennSound.phonetics}
+                    </Text>
+                    <Text style={glennSoundItemStyle}> 
+                        {glennSound.scoringChanceType}
+                    </Text>
+                </View>
+            </TouchableOpacity>
         );
     }
 }
@@ -44,4 +51,5 @@ const styles = {
     }
 }; 
 
-export default GlennSound; 
+const mapStateToProps = ({ selectedValues }) => ({ selectedValues }); 
+export default connect(mapStateToProps, { selectGlennSound })(GlennSound); 
