@@ -5,6 +5,7 @@ import Expo from 'expo';
 import icon from '../assets/icon.png';
 import { STATUS_BAR_HEIGHT, SCREEN_WIDTH, GLENN_COLORS } from '../constants';
 import GlennSoundListning from '../components/GlennSoundListning';
+import GlennSoundPlayer from '../components/GlennSoundPlayer';
 
 const cacheImages = images => images.map((image) => {
     if (typeof image === 'string') return Image.prefetch(image); 
@@ -57,6 +58,7 @@ class MainScreen extends Component {
                 {/* listing of audio */}
                 <GlennSoundListning />
                 <Divider style={dividerStyle} />
+                <GlennSoundPlayer />
             </View>
         </View>);
     }
