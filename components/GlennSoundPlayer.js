@@ -3,7 +3,6 @@ import { View } from 'react-native';
 import { Text } from 'react-native-elements'; 
 import { connect } from 'react-redux'; 
 import { Audio } from 'expo';
-import utmarktInlagg from '../assets/sounds/utmarkt_inlagg.wav';
 
 class GlennSoundPlayer extends Component {
     constructor(props) {
@@ -21,7 +20,7 @@ class GlennSoundPlayer extends Component {
         });
     }
 
-    async _loadAndPlayAudio() {
+    async _loadAndPlayAudio(soundAsset) {
         if (this.playbackInstance != null) {
 			await this.playbackInstance.unloadAsync();
 			this.playbackInstance.setOnPlaybackStatusUpdate(null);
@@ -33,14 +32,12 @@ class GlennSoundPlayer extends Component {
         
         try {
             const { soundObject, } = await Audio.Sound.create(
-                utmarktInlagg,
+                soundAsset,
                 initialStatus,
                 this._onPlaybackStatusUpdate
             );
             
             this.playbackInstance = soundObject;
-
-            await soundObject.loadAsync(utmarktInlagg);
             await soundObject.playAsync();
         } catch (error) {
             // An error occurred!
@@ -69,7 +66,7 @@ class GlennSoundPlayer extends Component {
 
         const { selectedValues: { selectedGlennSound } } = this.props;
         if (selectedGlennSound === null) return (<View />);
-        this._loadAndPlayAudio();
+        this._loadAndPlayAudio(selectedGlennSound.soundAsset);
 
         return (
             <View style={glennSoundPlayerContainerStyle}>

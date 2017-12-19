@@ -1,45 +1,44 @@
 [
     {
-        "scoringChanceType": "break away",
+        "scoringChanceType": "Distansskott",
         "icon": "icon type",
-        "phonetics": "HÅÅPOO",
+        "phonetics": "WhooOOooa",
         "team": "Italien",
-        "asset": null
+        "fileName": "whooa.wav"
     },
     {
-        "scoringChanceType": "free kick",
+        "scoringChanceType": "Frispark",
         "icon": "icon type",
         "phonetics": "ååÅÅAAJHHH",
         "team": "Italien",
-        "asset": null
+        "fileName": "utmarkt_inlagg.wav"
     },
     {
-        "scoringChanceType": "header",
+        "scoringChanceType": "Nick",
         "icon": "icon type",
         "phonetics": "HÖÖÖAAJ",
         "team": "Italien",
-        "asset": null
+        "fileName": "ugh.wav"
     },
     {
-        "scoringChanceType": "corner",
+        "scoringChanceType": "Hörna",
         "icon": "icon type",
         "phonetics": "OOOOkHH",
         "team": "Italien",
-        "asset": null
-
+        "fileName": "gerard_corner.wav"
     },
     {
         "scoringChanceType": "header",
         "icon": "icon type",
         "phonetics": "oHÖÖÖjj",
         "team": "Italien",
-        "asset": null
+        "fileName": "utmarkt_inlagg.wav"
     },
     {
-        "scoringChanceType": "break away",
+        "scoringChanceType": "Stolpen",
         "icon": "icon type",
         "phonetics": "oooOOOOOOÖÖÖHHOOoo",
         "team": "Italien",
-        "asset": null
+        "fileName": "stolpen.wav"
     }
 ]
