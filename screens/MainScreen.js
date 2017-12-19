@@ -13,7 +13,7 @@ const cacheImages = images => images.map((image) => {
 }); 
 
 // const cacheFonts = fonts => fonts.map(font => Font.loadAsync(font)); 
-  
+// const cacheSounds = _sounds => _sounds.map((_sound) => Expo.Asset.fromModule(_sound)); 
 
 class MainScreen extends Component {
     static navigationOptions = () => ({
@@ -24,7 +24,7 @@ class MainScreen extends Component {
         },
         headerTitleStyle: {
             marginTop: Platform.OS === 'android' ? STATUS_BAR_HEIGHT : 0,
-            color: GLENN_COLORS.defaultFont
+            color: GLENN_COLORS.defaultFontColor
         },
         headerLeft: (
         <Image

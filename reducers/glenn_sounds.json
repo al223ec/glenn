@@ -3,36 +3,43 @@
         "scoringChanceType": "break away",
         "icon": "icon type",
         "phonetics": "HÅÅPOO",
-        "team": "Italien" 
+        "team": "Italien",
+        "asset": null
     },
     {
         "scoringChanceType": "free kick",
         "icon": "icon type",
         "phonetics": "ååÅÅAAJHHH",
-        "team": "Italien"
+        "team": "Italien",
+        "asset": null
     },
     {
         "scoringChanceType": "header",
         "icon": "icon type",
         "phonetics": "HÖÖÖAAJ",
-        "team": "Italien" 
+        "team": "Italien",
+        "asset": null
     },
     {
         "scoringChanceType": "corner",
         "icon": "icon type",
         "phonetics": "OOOOkHH",
-        "team": "Italien"
+        "team": "Italien",
+        "asset": null
+
     },
     {
         "scoringChanceType": "header",
         "icon": "icon type",
         "phonetics": "oHÖÖÖjj",
-        "team": "Italien" 
+        "team": "Italien",
+        "asset": null
     },
     {
         "scoringChanceType": "break away",
         "icon": "icon type",
         "phonetics": "oooOOOOOOÖÖÖHHOOoo",
-        "team": "Italien"
+        "team": "Italien",
+        "asset": null
     }
 ]

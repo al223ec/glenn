@@ -4,7 +4,7 @@ import { Text } from 'react-native-elements';
 import { connect } from 'react-redux'; 
 import { GLENN_COLORS } from '../constants';
 import { selectGlennSound } from '../actions'; 
-
+    
 class GlennSound extends Component {
     render() {
         const {
